@@ -34,6 +34,8 @@ public class Persona {
 	ListaPaises listaPaises;
 	
 	
-	
+	@Embedded
+	Direccion direccion;
+	///
 
 }

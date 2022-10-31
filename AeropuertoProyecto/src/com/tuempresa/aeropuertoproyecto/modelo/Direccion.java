@@ -6,7 +6,7 @@ import org.openxava.annotations.*;
 
 import lombok.*;
 
-@Entity
+@Embeddable
 @Getter @Setter
 public class Direccion {
 	
