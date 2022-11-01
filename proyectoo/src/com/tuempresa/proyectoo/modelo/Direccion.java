@@ -8,13 +8,16 @@ import lombok.*;
 
 @Entity
 @Getter @Setter
+
+
+
 public class Direccion {
 	
 	@Id
 	@Column(length = 32)
 	String calle;
 	
-	@Column(length = 64)
+	@Column(length = 34)
 	String colonia;
 	
 	@ManyToOne
@@ -24,7 +27,6 @@ public class Direccion {
 	@ManyToOne
 	@DescriptionsList(descriptionProperties = "estado")
 	ListaEstados listadeestados;
-	
 	
 	
 	@ManyToOne

@@ -27,11 +27,11 @@ public class Vuelo extends Identificable{
 	
 	@ManyToOne(fetch = FetchType.LAZY, optional = true)
 	@DescriptionsList(descriptionProperties = "origen")
-	CiudadOrigen ciudadOrigen;
+	CiuOrigen ciudadOrigen;
 	
 	@ManyToOne(fetch = FetchType.LAZY , optional = true)
 	@DescriptionsList(descriptionProperties = "destino")
-	CiudadDestino ciudadDestino;
+	CiuDestino ciudadDestino;
 	
 	
 	@ManyToOne

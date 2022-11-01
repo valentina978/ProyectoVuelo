@@ -18,6 +18,7 @@ public class Persona extends Identificable {
 	@Column(length = 23)
 	String apellidos;
 	
+	@Required
 	@File
 	@Column(length = 32)
 	String fotografia;
